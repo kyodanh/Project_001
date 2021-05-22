@@ -16,7 +16,9 @@ class HomePage():
         self.product = Home.product
         self.detail_product = Home.detail_product
         self.button_addtocart = Home.button_addtocart
+        self.button_addtocart_2 = Home.button_addtocart_2
         self.shopping_cart_icon = Home.shopping_cart_icon
+        self.product_2 = Home.product_1
 
 
     def select_az(self):
@@ -49,12 +51,20 @@ class HomePage():
         else:
             print("test_4_ViewProduct: Detail product is wrong")
 
-    def addProduct(self):
+    def addProduct_1(self):
         self.driver.find_element_by_xpath(self.button_addtocart).click()
+
+    def addProduct_2(self):
+        self.driver.find_element_by_xpath(self.button_addtocart_2).click()
 
     def CheckProduct(self):
         number = self.driver.find_element_by_xpath(self.shopping_cart_icon).text
-        if self.driver.find_element_by_xpath(self.shopping_cart_icon).text != 0:
+        if self.driver.find_element_by_xpath(self.shopping_cart_icon).text >= "0":
             print("There is " + number + " in cart")
-        else:
+        elif not self.driver.find_element_by_xpath(self.shopping_cart_icon).text == None :
             print("There is no product in cart")
+        else :
+            print("error")
+
+    def ClickProduct2(self):
+        self.driver.find_element_by_xpath(self.product_2).click()

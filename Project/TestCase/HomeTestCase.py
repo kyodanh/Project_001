@@ -1,6 +1,9 @@
 from selenium import webdriver
 import unittest
 import time
+
+from selenium.common.exceptions import NoSuchElementException
+
 from Project.Page.SigninPage import SigninPage
 from Project.Page.HomePage import HomePage
 from Project.TestCase.SignInTestCase import SigninTestCase
@@ -50,12 +53,37 @@ class HomepageTestCase(unittest.TestCase):
         viewproduct.click_product()
         viewproduct.check_detail_product("carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.")
 
-
     def test_5_Add_ProductToCart(self):
         driver = self.driver
         addproduct = HomePage(driver)
-        addproduct.addProduct()
+        addproduct.addProduct_1()
+
+
+    def test_6_Check_ProductToCart(self):
+        driver = self.driver
+        addproduct = HomePage(driver)
         addproduct.CheckProduct()
+
+    def test_7_Add_Other_ProductToCart(self):
+        driver = self.driver
+        driver.find_element_by_xpath("//*[@id='back-to-products']").click()
+        addproduct = HomePage(driver)
+        addproduct.ClickProduct2()
+        addproduct.addProduct_2()
+        addproduct.CheckProduct()
+
+
+    def test_8_View_ProductinCart(self):
+        driver = self.driver
+        driver.find_element_by_xpath("//*[@id='shopping_cart_container']/a").click()
+        product =  driver.find_elements_by_class_name("inventory_item_name")
+        if  len(product) > 0 :
+             for i in product:
+                 print("Product in cart:" + i.text)
+        else :
+            print("There is no product in cart")
+
+
 
 
 
