@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d90f01f-ecb0-4535-9da7-3cf8b47190c0" name="Default Changelist" comment="">
+    <list default="true" id="4d90f01f-ecb0-4535-9da7-3cf8b47190c0" name="Default Changelist" comment="thêm lệnh check icon cart emty hoặc lớn hơn không và câu lệnh đưa danh sách  tên sản phẩm ra list">
+      <change afterPath="$PROJECT_DIR$/Project/Locator/Product.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/Page/ProductPage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/TestCase/BuyProductTestCase.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/Locator/Home.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Locator/Home.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/Page/HomePage.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Page/HomePage.py" afterDir="false" />
@@ -43,6 +46,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="io.unthrottled.amii.config.ui.PluginSettingsUI" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -54,7 +58,7 @@
       <recent name="C:\Users\ASUS\Desktop\Auto_Test\Project_001\Project\TestCase" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for HomeTestCase.HomepageTestCase">
+  <component name="RunManager" selected="Python tests.Unittests for BuyProductTestCase.BuyProductCase">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Auto_Test" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -74,6 +78,34 @@
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for BuyProductTestCase.BuyProductCase" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="Auto_Test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Project/TestCase" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;BuyProductTestCase.BuyProductCase&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for BuyProductTestCase.HomepageTestCase" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="Auto_Test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Project/TestCase" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;BuyProductTestCase.HomepageTestCase&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="Unittests for HomeTestCase.HomepageTestCase" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
@@ -120,6 +152,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests for BuyProductTestCase.BuyProductCase" />
+        <item itemvalue="Python tests.Unittests for BuyProductTestCase.HomepageTestCase" />
         <item itemvalue="Python tests.Unittests for HomeTestCase.HomepageTestCase" />
         <item itemvalue="Python tests.Unittests for Project.TestCase.SignInTestCase.SigninTestCase" />
         <item itemvalue="Python tests.Unittests for Project.TestCase.SignInTestCase" />
@@ -135,6 +169,14 @@
       <option name="presentableId" value="Default" />
       <updated>1621578961335</updated>
     </task>
+    <task id="LOCAL-00001" summary="thêm lệnh check icon cart emty hoặc lớn hơn không và câu lệnh đưa danh sách  tên sản phẩm ra list">
+      <created>1621700802293</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1621700802293</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -148,5 +190,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="thêm lệnh check icon cart emty hoặc lớn hơn không và câu lệnh đưa danh sách  tên sản phẩm ra list" />
+    <option name="LAST_COMMIT_MESSAGE" value="thêm lệnh check icon cart emty hoặc lớn hơn không và câu lệnh đưa danh sách  tên sản phẩm ra list" />
   </component>
 </project>
