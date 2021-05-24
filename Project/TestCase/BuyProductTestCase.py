@@ -80,6 +80,59 @@ class BuyProductCase(unittest.TestCase):
         viewcart.ClickCart()
         viewcart.Print_Number_NameOfCart()
 
+    def test_9_1_Checkout(self):
+        driver = self.driver
+        driver.find_element_by_xpath("//*[@id='checkout']").click()
+        driver.find_element_by_xpath("//*[@id='first-name']").send_keys("test")
+        driver.find_element_by_xpath("//*[@id='last-name']").send_keys("test")
+        driver.find_element_by_xpath("//*[@id='postal-code']").send_keys("test")
+        driver.find_element_by_xpath("//*[@id='continue']").click()
+
+    def test_9_2_CheckOut_OverView(self):
+        driver = self.driver
+        product = driver.find_elements_by_class_name("inventory_item_name")
+        if len(product) > 0:
+            count = len(product)
+            print("There are ", count, " Items")
+            for (item, i) in enumerate(product, start=1):
+                print("Product", item, "in in cart:" + i.text)
+        else:
+            print("There is no product in cart")
+
+        payment = driver.find_element_by_xpath("//*[@id='checkout_summary_container']/div/div[2]/div[2]").text
+        if payment == "SauceCard #31337" :
+            print("Payment Information : " ,payment)
+        else:
+            print("no")
+
+        shipping = driver.find_element_by_xpath("//*[@id='checkout_summary_container']/div/div[2]/div[4]").text
+        if shipping == "FREE PONY EXPRESS DELIVERY!":
+            print("Shipping Information: ", shipping)
+        else:
+            print("no")
+
+        Item  = driver.find_element_by_xpath("//*[@id='checkout_summary_container']/div/div[2]/div[5]").text
+        if Item  == "Item total: $39.98":
+            print(Item)
+        else:
+            print("no")
+
+        Tax = driver.find_element_by_xpath("//*[@id='checkout_summary_container']/div/div[2]/div[6]").text
+        if Tax == "Tax: $3.20":
+            print(Tax)
+        else:
+            print("no")
+
+        Total = driver.find_element_by_xpath("//*[@id='checkout_summary_container']/div/div[2]/div[7]").text
+        if Total == "Total: $43.18":
+            print(Total)
+        else:
+            print("no")
+
+    def test_9_3_finish_CheckOut(self):
+        driver = self.driver
+        driver.find_element_by_xpath("//*[@id='finish']").click()
+
     @classmethod
     def tearDownClass(cls):
         # cls.driver.close()

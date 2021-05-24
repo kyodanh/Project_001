@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d90f01f-ecb0-4535-9da7-3cf8b47190c0" name="Default Changelist" comment="thêm lệnh check icon cart emty hoặc lớn hơn không và câu lệnh đưa danh sách  tên sản phẩm ra list">
-      <change afterPath="$PROJECT_DIR$/Project/Locator/Product.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/Page/ProductPage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/TestCase/BuyProductTestCase.py" afterDir="false" />
+    <list default="true" id="4d90f01f-ecb0-4535-9da7-3cf8b47190c0" name="Default Changelist" comment="thêm test case mua hàng và đếm số mặt hàng trong home page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/Locator/Home.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Locator/Home.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/Page/HomePage.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Page/HomePage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/TestCase/HomeTestCase.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/TestCase/HomeTestCase.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/TestCase/BuyProductTestCase.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/TestCase/BuyProductTestCase.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621700802293</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="thêm test case mua hàng và đếm số mặt hàng trong home page">
+      <created>1621763371038</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1621763371038</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -193,6 +195,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="thêm lệnh check icon cart emty hoặc lớn hơn không và câu lệnh đưa danh sách  tên sản phẩm ra list" />
-    <option name="LAST_COMMIT_MESSAGE" value="thêm lệnh check icon cart emty hoặc lớn hơn không và câu lệnh đưa danh sách  tên sản phẩm ra list" />
+    <MESSAGE value="thêm test case mua hàng và đếm số mặt hàng trong home page" />
+    <option name="LAST_COMMIT_MESSAGE" value="thêm test case mua hàng và đếm số mặt hàng trong home page" />
   </component>
 </project>
