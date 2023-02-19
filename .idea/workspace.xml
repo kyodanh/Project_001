@@ -5,8 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d90f01f-ecb0-4535-9da7-3cf8b47190c0" name="Default Changelist" comment="thêm test case mua hàng và đếm số mặt hàng trong home page">
+      <change afterPath="$PROJECT_DIR$/chromedriver.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/features/Login.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/features/steps/Login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Auto_Test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Auto_Test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/Page/HomePage.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Page/HomePage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/Page/ProductPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Page/ProductPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/Page/SigninPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Page/SigninPage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/TestCase/BuyProductTestCase.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/TestCase/BuyProductTestCase.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/TestCase/HomeTestCase.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/TestCase/HomeTestCase.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,25 +40,30 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="1spobDdnpyBa4NDvZDTw7YPjKYY" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="io.unthrottled.amii.config.ui.PluginSettingsUI" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "last_opened_file_path": "C:/Users/ASUS/Desktop/Other/Code/Project_BDD",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ASUS\Desktop\Other\Code\Project_BDD" />
       <recent name="C:\Users\ASUS\Desktop\Auto_Test\Project_001\Project\Locator" />
       <recent name="C:\Users\ASUS\Desktop\Auto_Test\Project_001\Project\Page" />
       <recent name="C:\Users\ASUS\Desktop\Auto_Test\Project_001" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ASUS\Desktop\Other\Code\Project_BDD\features" />
       <recent name="C:\Users\ASUS\Desktop\Auto_Test\Project_001\Project\TestCase" />
     </key>
   </component>
@@ -75,6 +89,48 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for BuyProductTestCase.BuyProductCase.test_9_2_CheckOut_OverView" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Auto_Test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Project/TestCase" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;BuyProductTestCase.BuyProductCase.test_9_2_CheckOut_OverView&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for HomeTestCase.HomepageTestCase.test_1_OpenWeb" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Auto_Test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Project/TestCase" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;HomeTestCase.HomepageTestCase.test_1_OpenWeb&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for HomeTestCase.HomepageTestCase.test_2_SignIn" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Auto_Test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Project/TestCase" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;HomeTestCase.HomepageTestCase.test_2_SignIn&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Unittests for BuyProductTestCase.BuyProductCase" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="Auto_Test" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -86,20 +142,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;BuyProductTestCase.BuyProductCase&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests for BuyProductTestCase.HomepageTestCase" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="Auto_Test" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Project/TestCase" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;BuyProductTestCase.HomepageTestCase&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -117,41 +159,13 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for Project.TestCase.SignInTestCase" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="Auto_Test" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Project/TestCase" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;Project.TestCase.SignInTestCase&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests for Project.TestCase.SignInTestCase.SigninTestCase" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="Auto_Test" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Project/TestCase" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;Project.TestCase.SignInTestCase.SigninTestCase&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.Unittests for BuyProductTestCase.BuyProductCase" />
-        <item itemvalue="Python tests.Unittests for BuyProductTestCase.HomepageTestCase" />
+        <item itemvalue="Python tests.Python tests for BuyProductTestCase.BuyProductCase.test_9_2_CheckOut_OverView" />
         <item itemvalue="Python tests.Unittests for HomeTestCase.HomepageTestCase" />
-        <item itemvalue="Python tests.Unittests for Project.TestCase.SignInTestCase.SigninTestCase" />
-        <item itemvalue="Python tests.Unittests for Project.TestCase.SignInTestCase" />
+        <item itemvalue="Python tests.Python tests for HomeTestCase.HomepageTestCase.test_2_SignIn" />
+        <item itemvalue="Python tests.Python tests for HomeTestCase.HomepageTestCase.test_1_OpenWeb" />
       </list>
     </recent_temporary>
   </component>
@@ -191,7 +205,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="thêm lệnh check icon cart emty hoặc lớn hơn không và câu lệnh đưa danh sách  tên sản phẩm ra list" />

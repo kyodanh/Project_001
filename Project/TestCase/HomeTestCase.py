@@ -23,6 +23,7 @@ class HomepageTestCase(unittest.TestCase):
         driver.get("https://www.saucedemo.com/") #openwweb
         driver.set_page_load_timeout(20)
         time.sleep(0.3)
+        print("thanhf congf")
 
     def test_2_SignIn(self):
         driver = self.driver

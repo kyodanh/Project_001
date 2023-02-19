@@ -20,36 +20,36 @@ class ProductPage():
 
 
         def click_product(self):
-            self.driver.find_element_by_xpath(self.product).click()
+            self.driver.find_element("xpath", self.product).click()
 
         def check_detail_product(self, detail):
-            self.driver.find_element_by_xpath(self.detail_product).text
-            if self.driver.find_element_by_xpath(
+            self.driver.find_element("xpath",self.detail_product).text
+            if  self.driver.find_element("xpath",
                     self.detail_product).text == detail:
                 print("test_4_ViewProduct: Detail product is rignt")
             else:
                 print("test_4_ViewProduct: Detail product is wrong")
 
         def addProduct_1(self):
-            self.driver.find_element_by_xpath(self.button_addtocart).click()
+            self.driver.find_element("xpath",self.button_addtocart).click()
 
         def addProduct_2(self):
-            self.driver.find_element_by_xpath(self.button_addtocart_2).click()
+            self.driver.find_element("xpath",self.button_addtocart_2).click()
 
         def CheckProduct(self):
-            number = self.driver.find_element_by_xpath(self.shopping_cart_icon).text
-            if self.driver.find_element_by_xpath(self.shopping_cart_icon).text >= "0":
+            number =  self.driver.find_element("xpath",self.shopping_cart_icon).text
+            if  self.driver.find_element("xpath",self.shopping_cart_icon).text >= "0":
                 print("There is " + number + " product in cart")
-            elif not self.driver.find_element_by_xpath(self.shopping_cart_icon).text == None:
+            elif not  self.driver.find_element("xpath",self.shopping_cart_icon).text == None:
                 print("There is no product in cart")
             else:
                 print("error")
 
         def ClickProduct2(self):
-            self.driver.find_element_by_xpath(self.product_2).click()
+            self.driver.find_element("xpath",self.product_2).click()
 
         def Print_Number_NameOfProduct(self):
-            product = self.driver.find_elements_by_class_name(self.productname_homepage)
+            product =  self.driver.find_element("class-name",self.productname_homepage)
             if len(product) > 0:
                 count = len(product)
                 print("There are ", count, " Items")
@@ -59,10 +59,10 @@ class ProductPage():
                 print("There is no Product Page")
 
         def ClickCart(self):
-            self.driver.find_element_by_xpath(self.shopping_cart_icon).click()
+            self.driver.find_element("xpath",self.shopping_cart_icon).click()
 
         def Print_Number_NameOfCart(self):
-            product = self.driver.find_elements_by_class_name(self.productname_cart)
+            product = self.driver.find_element("class-name",self.productname_cart)
             if len(product) > 0:
                 count = len(product)
                 print("There are ", count, " Items")
@@ -72,7 +72,8 @@ class ProductPage():
                 print("There is no product in cart")
 
         def Backbutton(self):
-            self.driver.find_element_by_xpath(self.backbutton).click()
+            self.driver.find_element("xpath",self.backbutton).click()
+
 
 
 

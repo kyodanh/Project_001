@@ -21,26 +21,26 @@ class HomePage():
 
 
     def select_az(self):
-        select = Select(self.driver.find_element_by_xpath(self.select_box))
+        select = Select(self.driver.find_element("xpath",self.select_box))
         select.select_by_value(self.az)
 
     def select_za(self):
-        select = Select(self.driver.find_element_by_xpath(self.select_box))
+        select = Select(self.driver.find_element("xpath",self.select_box))
         select.select_by_value(self.za)
 
     def select_lohi(self):
-        select = Select(self.driver.find_element_by_xpath(self.select_box))
+        select = Select(self.driver.find_element("xpath",self.select_box))
         select.select_by_value(self.lohi)
 
     def select_hilo(self):
-        select = Select(self.driver.find_element_by_xpath(self.select_box))
+        select = Select(self.driver.find_element("xpath",self.select_box))
         select.select_by_value(self.hilo)
 
     def click_menu(self):
-        self.driver.find_element_by_xpath(self.menu).click()
+        self.driver.find_element("xpath",self.menu).click()
 
     def Print_Number_NameOfProduct(self):
-        product = self.driver.find_elements_by_class_name(self.productname_homepage)
+        product = self.driver.find_element("class-name",self.productname_homepage)
         if len(product) > 0:
             count = len(product)
             print("There are ", count, " Items")
@@ -50,10 +50,10 @@ class HomePage():
             print("There is no Product Page")
 
     def ClickCart(self):
-        self.driver.find_element_by_xpath(self.shopping_cart_icon).click()
+        self.driver.find_element("xpath",self.shopping_cart_icon).click()
 
     def Print_Number_NameOfCart(self):
-        product = self.driver.find_elements_by_class_name(self.productname_cart)
+        product = self.driver.find_element("class-name",self.productname_cart)
         if len(product) > 0:
             count = len(product)
             print("There are ", count, " Items")

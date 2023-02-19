@@ -10,13 +10,13 @@ class SigninPage():
         self.button_signin = Signin.button_signin
 
     def input_username(self,username):
-        self.driver.find_element_by_xpath(self.username).clear()
-        self.driver.find_element_by_xpath(self.username).send_keys(username)
+        self.driver.find_element("xpath",self.username).clear()
+        self.driver.find_element("xpath",self.username).send_keys(username)
 
     def input_password(self,password):
-        self.driver.find_element_by_xpath(self.password).clear()
-        self.driver.find_element_by_xpath(self.password).send_keys(password)
+        self.driver.find_element("xpath",self.password).clear()
+        self.driver.find_element("xpath",self.password).send_keys(password)
 
     def click_button_signin(self):
-        self.driver.find_element_by_xpath(self.button_signin).click()
+        self.driver.find_element("xpath",self.button_signin).click()
 

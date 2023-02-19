@@ -46,8 +46,8 @@ class BuyProductCase(unittest.TestCase):
         homepage.select_hilo()
         time.sleep(0.3)
         homepage.select_az()
-        homepage.Print_Number_NameOfProduct()
-        homepage.click_menu()
+        # homepage.Print_Number_NameOfProduct()
+        # homepage.click_menu()
 
     def test_4_ViewProduct(self):
         driver = self.driver
@@ -82,15 +82,15 @@ class BuyProductCase(unittest.TestCase):
 
     def test_9_1_Checkout(self):
         driver = self.driver
-        driver.find_element_by_xpath("//*[@id='checkout']").click()
-        driver.find_element_by_xpath("//*[@id='first-name']").send_keys("test")
-        driver.find_element_by_xpath("//*[@id='last-name']").send_keys("test")
-        driver.find_element_by_xpath("//*[@id='postal-code']").send_keys("test")
-        driver.find_element_by_xpath("//*[@id='continue']").click()
+        driver.find_element("xpath","//*[@id='checkout']").click()
+        driver.find_element("xpath","//*[@id='first-name']").send_keys("test")
+        driver.find_element("xpath","//*[@id='last-name']").send_keys("test")
+        driver.find_element("xpath","//*[@id='postal-code']").send_keys("test")
+        driver.find_element("xpath","//*[@id='continue']").click()
 
     def test_9_2_CheckOut_OverView(self):
         driver = self.driver
-        product = driver.find_elements_by_class_name("inventory_item_name")
+        product = driver.find_element("class_name","inventory_item_name")
         if len(product) > 0:
             count = len(product)
             print("There are ", count, " Items")
@@ -99,31 +99,31 @@ class BuyProductCase(unittest.TestCase):
         else:
             print("There is no product in cart")
 
-        payment = driver.find_element_by_xpath("//*[@id='checkout_summary_container']/div/div[2]/div[2]").text
+        payment = driver.find_element("xpath","//*[@id='checkout_summary_container']/div/div[2]/div[2]").text
         if payment == "SauceCard #31337" :
             print("Payment Information : " ,payment)
         else:
             print("no")
 
-        shipping = driver.find_element_by_xpath("//*[@id='checkout_summary_container']/div/div[2]/div[4]").text
+        shipping = driver.find_element("xpath","//*[@id='checkout_summary_container']/div/div[2]/div[4]").text
         if shipping == "FREE PONY EXPRESS DELIVERY!":
             print("Shipping Information: ", shipping)
         else:
             print("no")
 
-        Item  = driver.find_element_by_xpath("//*[@id='checkout_summary_container']/div/div[2]/div[5]").text
+        Item  = driver.find_element("xpath","//*[@id='checkout_summary_container']/div/div[2]/div[5]").text
         if Item  == "Item total: $39.98":
             print(Item)
         else:
             print("no")
 
-        Tax = driver.find_element_by_xpath("//*[@id='checkout_summary_container']/div/div[2]/div[6]").text
+        Tax = driver.find_element("xpath","//*[@id='checkout_summary_container']/div/div[2]/div[6]").text
         if Tax == "Tax: $3.20":
             print(Tax)
         else:
             print("no")
 
-        Total = driver.find_element_by_xpath("//*[@id='checkout_summary_container']/div/div[2]/div[7]").text
+        Total = driver.find_element("xpath","//*[@id='checkout_summary_container']/div/div[2]/div[7]").text
         if Total == "Total: $43.18":
             print(Total)
         else:
@@ -131,7 +131,7 @@ class BuyProductCase(unittest.TestCase):
 
     def test_9_3_finish_CheckOut(self):
         driver = self.driver
-        driver.find_element_by_xpath("//*[@id='finish']").click()
+        driver.find_element("xpath" , "//*[@id='finish']").click()
 
     @classmethod
     def tearDownClass(cls):
